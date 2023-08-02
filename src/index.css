@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --res-pixel: (0.8px + 0.05335vmin);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-bg {
+    background-image: url(./content/main-bg.jpg);
+    background-position: center;
+    height: calc(var(--res-pixel) * 700);
+}
+
+.text-xs-res {
+    font-size: calc(var(--res-pixel) * 12);
+    line-height: calc(var(--res-pixel) * 16);
+}
+
+.text-sm-res {
+    font-size: calc(var(--res-pixel) * 14);
+    line-height: calc(var(--res-pixel) * 20);
+}
+
+.text-base-res {
+    font-size: calc(var(--res-pixel) * 16);
+    line-height: calc(var(--res-pixel) * 24);
+}
+
+.text-lg-res {
+    font-size: calc(var(--res-pixel) * 18);
+    line-height: calc(var(--res-pixel) * 28);
+}
+
+.text-xl-res {
+    font-size: calc(var(--res-pixel) * 20);
+    line-height: calc(var(--res-pixel) * 28);
+}
+
+.text-2xl-res {
+    font-size: calc(var(--res-pixel) * 24);
+    line-height: calc(var(--res-pixel) * 32);
+}
+
+.text-3xl-res {
+    font-size: calc(var(--res-pixel) * 30);
+    line-height: calc(var(--res-pixel) * 36);
+}
+
+.text-4xl-res {
+    font-size: calc(var(--res-pixel) * 36);
+    line-height: calc(var(--res-pixel) * 40);
+}
+
+.text-5xl-res {
+    font-size: calc(var(--res-pixel) * 48);
+    line-height: 1;
+}
+
+.text-6xl-res {
+    font-size: calc(var(--res-pixel) * 60);
+    line-height: 1;
+}
+
+.text-7xl-res {
+    font-size: calc(var(--res-pixel) * 72);
+    line-height: 1;
+}
+
+.text-8xl-res {
+    font-size: calc(var(--res-pixel) * 96);
+    line-height: 1;
+}
+
+.text-9xl-res {
+    font-size: calc(var(--res-pixel) * 128);
+    line-height: 1;
 }
