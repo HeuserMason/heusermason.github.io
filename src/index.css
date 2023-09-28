@@ -6,10 +6,61 @@
     --res-pixel: (0.8px + 0.05335vmin);
 }
 
+body {
+
+    background-color: #FAF9F6;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(./content/main-bg.jpg);
+    background-position: center;
+    /* height: calc(var(--res-pixel) * 700); */
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.cream-bg {
+    background-color: #FAF9F6;
+}
+
+.vertical-shadow {
+
+    -webkit-box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
+    -moz-box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
+    box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
+}
+
 .header-bg {
     background-image: url(./content/main-bg.jpg);
     background-position: center;
-    height: calc(var(--res-pixel) * 700);
+    /* height: calc(var(--res-pixel) * 700); */
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.text-highlight {
+    @apply bg-[#FFE800]/95 text-black;
+}
+
+.main-padding {
+    @apply px-[10%] sm:px-[15%] md:px-[30%];
+}
+
+.absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.portfolio-pic {
+    background: url(./content/portfolio-picture.jpg);
+    background-size: cover;
+    background-position: center 15%;
+    width: 144px;
+    height: 144px;
+}
+
+.box-fade-inset {
+
+    -webkit-box-shadow: inset 0px -110px 108px 3px rgba(250,249,246,1);
+    -moz-box-shadow: inset 0px -110px 108px 3px rgba(250,249,246,1);
+    box-shadow: inset 0px -110px 108px 3px rgba(250,249,246,1);
 }
 
 .text-xs-res {
