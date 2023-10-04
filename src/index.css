@@ -8,7 +8,8 @@
 
 body {
 
-    background-color: #FAF9F6;
+    background-color: #f6f4ef;
+    /* background-color: #efebe1; */
     font-family: 'Nunito Sans', sans-serif;
     background-image: url(./content/main-bg.jpg);
     background-position: center;
@@ -17,23 +18,52 @@ body {
     background-attachment: fixed;
 }
 
+h1 {
+    font-family: 'Caveat', cursive;
+}
+
 .cream-bg {
-    background-color: #FAF9F6;
+    background-color: #f6f4ef;
+    /* background-color: #FAF9F6; */
 }
 
 .vertical-shadow {
 
-    -webkit-box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
-    -moz-box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
-    box-shadow: 0px 0px 55px 50px rgba(250,249,246,1);
+    -webkit-box-shadow: 0px 0px 55px 50px rgba(246, 244, 239, 1);
+    -moz-box-shadow: 0px 0px 55px 50px rgba(246, 244, 239, 1);
+    box-shadow: 0px 0px 55px 50px rgba(246, 244, 239, 1);
 }
 
 .header-bg {
-    background-image: url(./content/main-bg.jpg);
+    background-color: url(./content/main-bg.jpg);
     background-position: center;
     /* height: calc(var(--res-pixel) * 700); */
     height: 100%;
     background-attachment: fixed;
+}
+
+#inner-work-parent .hidden-work-child {
+    visibility: hidden;
+}
+
+#inner-work-parent:hover .hidden-work-child {
+    visibility: visible;
+}
+
+.grow-work { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow-work:hover { 
+    transform: scale(1.015); 
+}
+
+.grow-icon { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow-icon:hover { 
+    transform: scale(1.15);
 }
 
 .text-highlight {
@@ -41,7 +71,7 @@ body {
 }
 
 .main-padding {
-    @apply px-[10%] sm:px-[15%] md:px-[30%];
+    @apply px-[10%] sm:px-[15%] lg:px-[30%];
 }
 
 .absolute-center {
@@ -54,6 +84,14 @@ body {
     background-position: center 15%;
     width: 144px;
     height: 144px;
+}
+
+.svg-grey-filter {
+    filter: invert(45%) sepia(9%) saturate(592%) hue-rotate(182deg) brightness(96%) contrast(88%);
+}
+
+.svg-white-filter {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(30deg) brightness(108%) contrast(101%);
 }
 
 .box-fade-inset {
