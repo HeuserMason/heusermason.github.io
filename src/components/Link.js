@@ -1,7 +1,7 @@
-const Link = ({children, ...rest}) => {
+const Link = ({children, className, ...rest}) => {
 
     return (
-        <button {...rest} className='hover:text-gray-600'>{children}</button>
+        <button {...rest} className={'hover:text-gray-600 ' + className}>{children}</button>
     );
 };
 

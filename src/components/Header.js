@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="flex justify-center items-center">
                     <img src={Sig} className='h-12' alt='Signature'/>
                 </div>
-                <div className="flex justify-center items-center text-center gap-6 sm:gap-10 font-bold text-lg">
+                <div className="flex justify-center items-center text-center gap-6 xl:gap-10 font-bold text-lg">
                     <Link onClick={() => scrollToElement("about")}>About</Link>
                     <Link onClick={() => scrollToElement("skills")}>Skills</Link>
                     <Link onClick={() => scrollToElement("work")}>Work</Link>

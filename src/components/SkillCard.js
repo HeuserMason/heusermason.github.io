@@ -1,6 +1,6 @@
 import Award from "../content/icons/award-solid.svg"
 
-const SkillCard = ({ img, title, desc, colorLight, colorDark }) => {
+const SkillCard = ({ img, title, desc, colorLight, colorDark, buttonFunc }) => {
 
     return (
 
@@ -14,7 +14,7 @@ const SkillCard = ({ img, title, desc, colorLight, colorDark }) => {
                     </div>
                 </div>
                 <div className="py-12 px-2 flex-col justify-center text-center relative">
-                    <h2 className="text-lg font-bold px-4 select-none">{title}</h2>
+                    <h3 className="text-lg font-bold px-4 select-none">{title}</h3>
                     <div className="py-4">
                         <hr className="h-1 w-12 border-zinc-400 m-auto"/>
                     </div>
@@ -27,7 +27,7 @@ const SkillCard = ({ img, title, desc, colorLight, colorDark }) => {
                         <hr className="h-1 w-24 border-zinc-400 m-auto"/>
                     </div>
                     <div className="flex justify-center">
-                        <button className="underline text-blue-400 text-center">Learn more</button>
+                        <button className="underline text-blue-400 text-center" onClick={buttonFunc}>Learn more</button>
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@ body {
     background-attachment: fixed;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Caveat', cursive;
 }
 
@@ -26,6 +26,10 @@ h1 {
     background-color: #f6f4ef;
     /* background-color: #FAF9F6; */
 }
+
+.modalStyle .ant-modal-content{
+    background-color: #f6f4ef;
+ }
 
 .vertical-shadow {
 

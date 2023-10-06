@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { ToastContainer } from 'react-toastify';
@@ -9,7 +10,6 @@ import Landing from "./pages/Landing";
 const App = () => {
 
     return (
-        
         <BrowserRouter>
             <ToastContainer
                 position="top-center"
