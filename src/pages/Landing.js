@@ -119,9 +119,9 @@ const Landing = () => {
                             <hr className="h-1 w-12 border-zinc-400 mt-3"/>
                         </div>
                         <p class='font-light text-2xl py-2'>
-                            Hey! I am a self-taught software developer with a passion for crafting ideas, whether they're small-scale applications or large-scale solutions built to scale.
+                            Hey! I am a self-taught software developer with a passion for building ideas, whether they're small-scale applications or large-scale solutions built to scale.
                             <br /><br />
-                            I take immense pride in my ability to deliver <span className="text-highlight font-medium">high-quality</span>, innovative solutions that exceed expectations. My approach to each project is a commitment to excellence, ensuring that every line of code serves a purpose and contributes to a seamless user experience.
+                            I take immense pride in my ability to deliver <span className="text-highlight font-medium">high-quality</span>, innovative solutions that exceed expectations.
                             <br /><br />
                             My commitment to <span className="text-highlight font-medium">client satisfaction</span> is at the core of my freelance practice. I believe in fostering strong, transparent, and collaborative relationships with my clients to ensure that their visions are not just met but exceeded.
                             <br /><br />
@@ -139,19 +139,19 @@ const Landing = () => {
                         <h1 className="inline text-6xl font-bold">Skills</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">A couple of my main skills outlining what I'm capable of!</p>
+                    <p className="text-lg inline px-2 italic font-bold text-gray-600">A couple of my main skills outlining what I'm capable of! Tap a card to learn more.</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12">
                     {mappedSkills}
                 </div>
             </div>
-            <div className="px-[10%] sm:px-[10%] lg:px-[15%] py-24 cream-bg vertical-shadow" id="work">
+            <div className="px-[10%] sm:px-[10%] lg:px-[10%] py-24 cream-bg vertical-shadow" id="work">
                 <div className="w-full pb-24 text-right px-[5%]">
                     <div className="py-4 pb-2 whitespace-nowrap flex items-center justify-end space-x-6">
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                         <h1 className="inline text-6xl font-bold">Work</h1>
                     </div>
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Here's a collection of some of my past work, have a look.</p>
+                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Here's a collection of some of my past work, have a look!</p>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8'>
                     {mappedWork}

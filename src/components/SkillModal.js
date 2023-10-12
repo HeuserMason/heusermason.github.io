@@ -20,10 +20,12 @@ const SkillModal = ({keyConstant, onClose}) => {
                 </button>
             </div>
         }>
-            <div className='flex flex-col justify-center text-center py-8 px-[10%]'>
-                <hr className="h-1 w-[25%] border-zinc-400 mx-auto mb-3"/>
-                {skillObject.longDesc}
-                <hr className="h-1 w-[50%] border-zinc-400 mx-auto mt-3"/>
+            <div className='flex flex-col justify-center text-center px-[10%]'>
+                <hr className="h-1 w-[25%] border-zinc-400 mx-auto my-6"/>
+                    <div className='overflow-y-auto max-h-[18rem] sm:max-h-[35rem] py-4 px-0 sm:px-3 md:px-6'>
+                        {skillObject.longDesc}
+                    </div>
+                <hr className="h-1 w-[50%] border-zinc-400 mx-auto my-6"/>
             </div>
         </Modal>
     );
