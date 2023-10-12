@@ -203,7 +203,7 @@ const WORK = [
         "key": 0,
         "title": "Baby Boosts",
         "website": "https://babyboosts.com",
-        "desc": "One of my first personal projects, designed to help players achieve their goals in League of Legends.",
+        "desc": <>One of my first personal projects, designed to help players achieve their goals in League of Legends. <br/> </>,
         "coverImage": babyBoostsCover,
         "images": babyBoostsImages,
     },

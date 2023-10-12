@@ -10,7 +10,7 @@ import Landing from "./pages/Landing";
 const App = () => {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
