@@ -1,5 +1,6 @@
 import X from '../content/icons/xmark-solid.svg';
 import styled from "styled-components";
+import { useRef } from 'react';
 import { Carousel } from 'antd';
 
 import Modal from './Modal';
@@ -38,11 +39,21 @@ const WorkModal = ({keyConstant, onClose}) => {
         }
     `;
 
+    const CarouselRef = useRef(null);
+
     return (
         <Modal onClose={onClose} size={"large"} header={
-            <CarouselStyle autoplay effect="fade" className='relative'>
-                {mappedImages}
-            </CarouselStyle>
+            <div className='relative'>
+                <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/4 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-r-none'>
+                    
+                </button>
+                <button onClick={() => CarouselRef.current.next()} className='absolute right-0 top-1/2 -translate-y-1/2 h-full w-1/4 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none'>
+                    
+                </button>
+                <CarouselStyle autoplay effect="fade" className='relative z-40' ref={CarouselRef}>
+                    {mappedImages}
+                </CarouselStyle>
+            </div>
         }>
             <div className='py-8 px-[7.5%] rounded-xl rounded-t-none border-t-2 cream-bg relative'>
                 <button onClick={onClose} className="p-4 bg-gray-200 hover:bg-gray-300 rounded-xl absolute right-5 top-4 border-2">
