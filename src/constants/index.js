@@ -197,6 +197,23 @@ function importAll(r) {
 const babyBoostsImages = importAll(require.context('../content/work/babyboosts', false, /\.(png|jpe?g|svg)$/));
 const justGroomingImages = importAll(require.context('../content/work', false, /\.(png|jpe?g|svg)$/));
 
+// {
+//     "key": 1,
+//     "title": "Just Grooming",
+//     "website": "",
+//     "desc": "A nice grooming business for animals!",
+//     "coverImage": coverImage,
+//     "images": justGroomingImages,
+// },
+// {
+//     "key": 2,
+//     "title": "Lunaris Coaching",
+//     "website": "https://lunariscoaching.com",
+//     "desc": "Designed for ease of use and simplisticity. Made for learning how to be a better player in League of Legends through coaching.",
+//     "coverImage": coverImage,
+//     "images": justGroomingImages,
+// },
+
 const WORK = [
 
     {
@@ -206,22 +223,6 @@ const WORK = [
         "desc": <>One of my first personal projects, designed to help players achieve their goals in League of Legends. <br/> </>,
         "coverImage": babyBoostsCover,
         "images": babyBoostsImages,
-    },
-    {
-        "key": 1,
-        "title": "Just Grooming",
-        "website": "",
-        "desc": "A nice grooming business for animals!",
-        "coverImage": coverImage,
-        "images": justGroomingImages,
-    },
-    {
-        "key": 2,
-        "title": "Lunaris Coaching",
-        "website": "https://lunariscoaching.com",
-        "desc": "Designed for ease of use and simplisticity. Made for learning how to be a better player in League of Legends through coaching.",
-        "coverImage": coverImage,
-        "images": justGroomingImages,
     },
 ];
 

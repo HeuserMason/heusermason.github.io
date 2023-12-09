@@ -99,7 +99,7 @@ const Landing = () => {
         <>
             {skillModal}
             {workModal}
-            <div className="w-full pt-[32.5rem] px-[5%] pb-24">
+            <div className="w-full pt-[30rem] px-[5%] pb-24">
                 <div className="py-4">
                     <h1 className="inline text-6xl font-bold">Welcome!</h1>
                 </div>
@@ -140,7 +140,7 @@ const Landing = () => {
                         <h1 className="inline text-6xl font-bold">Skills</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">A couple of my main skills outlining what I'm capable of! Tap a card to learn more.</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">A couple of my main skills outlining what I'm capable of! Tap a card to learn more.</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12">
                     {mappedSkills}
@@ -152,7 +152,7 @@ const Landing = () => {
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                         <h1 className="inline text-6xl font-bold">Work</h1>
                     </div>
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Here's a collection of some of my past work. Have a look!</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">Here's a collection of some of my past work. Have a look!</p>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8'>
                     {mappedWork}
@@ -161,11 +161,11 @@ const Landing = () => {
             <div className="px-[10%] sm:px-[15%] lg:px-[20%] py-48" id="contact">
                 <div className="w-full pb-24">
                     <div className="py-4 pb-2 whitespace-nowrap flex items-center space-x-6">
-                        <h1 className="inline text-6xl font-bold">Hire me</h1>
+                        <h1 className="inline text-6xl font-bold">Hire Me</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
                     {/* bg-[#FFE800]/50 */}
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Email me and tell me all about your grand ideas, I'd love to hear em! <br /> I'll get back to you as soon as possible!</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">Contact me and tell me all about your grand ideas! <br /> I'll get back to you as soon as possible.</p>
                 </div>
                 <form onSubmit={handleEmailSubmit} className="xxl:px-[20%]">
                     <div className="space-y-4">           

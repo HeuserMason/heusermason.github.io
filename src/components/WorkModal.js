@@ -1,4 +1,6 @@
 import X from '../content/icons/xmark-solid.svg';
+import Chevron from '../content/icons/chevron-left-solid.svg';
+import LinkOut from '../content/icons/arrow-up-right-from-square-solid.svg';
 import styled from "styled-components";
 import { useRef } from 'react';
 import { Carousel } from 'antd';
@@ -15,13 +17,14 @@ const WorkModal = ({keyConstant, onClose}) => {
 
         return (
             <div className="h-72 sm:h-[40rem] w-full rounded-xl rounded-b-none">
-                <div className="w-full h-full rounded-xl rounded-b-none" style={{
+                {/* <div className="w-full h-full rounded-xl rounded-b-none" style={{
                     backgroundImage: `url(${img})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}>
-                </div>
+                    backgroundRepeat: 'no-repeat',
+                }}> */}
+                    <img src={img} alt="Showcase" className='w-full h-auto absolute-center' />
+                {/* </div> */}
             </div>
         );
     });
@@ -42,13 +45,13 @@ const WorkModal = ({keyConstant, onClose}) => {
     const CarouselRef = useRef(null);
 
     return (
-        <Modal onClose={onClose} size={"large"} header={
+        <Modal className='' onClose={onClose} size={"large"} header={
             <div className='relative'>
-                <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/4 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-r-none'>
-                    
+                <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-r-none'>
+                    <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none' />
                 </button>
-                <button onClick={() => CarouselRef.current.next()} className='absolute right-0 top-1/2 -translate-y-1/2 h-full w-1/4 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none'>
-                    
+                <button onClick={() => CarouselRef.current.next()} className='absolute right-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none rotate-180'>
+                    <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none' />
                 </button>
                 <CarouselStyle autoplay effect="fade" className='relative z-40' ref={CarouselRef}>
                     {mappedImages}
@@ -64,7 +67,9 @@ const WorkModal = ({keyConstant, onClose}) => {
                 {workObject.website !== "" &&
                     <div className='flex items-center space-x-2 mt-8'>
                         <hr className="h-1 w-8 border-zinc-400 mt-1"/>
-                        <a className="font-bold underline text-blue-400" href={workObject.website} target="_blank" rel="noreferrer">Website</a>
+                        <div className='flex gap-x-1.5 text-blue-400'>
+                            <a className="font-bold underline" href={workObject.website} target="_blank" rel="noreferrer">Website</a><img src={LinkOut} width="12" height="12" alt="Chevron" className='' />
+                        </div>
                     </div>
                 }
             </div>

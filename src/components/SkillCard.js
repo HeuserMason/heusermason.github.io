@@ -20,7 +20,7 @@ const SkillCard = ({ img, title, desc, colorLight, colorDark, buttonFunc }) => {
                     </div>
                     <p className="font-base text-sm px-8 select-none">
                         {desc}
-                    </p>        
+                    </p>
                 </div>
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm">
                     <div className="py-4">
