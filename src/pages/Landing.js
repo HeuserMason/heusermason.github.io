@@ -161,7 +161,7 @@ const Landing = () => {
             <div className="px-[10%] sm:px-[15%] lg:px-[20%] py-48" id="contact">
                 <div className="w-full pb-24">
                     <div className="py-4 pb-2 whitespace-nowrap flex items-center space-x-6">
-                        <h1 className="inline text-6xl font-bold">Contact</h1>
+                        <h1 className="inline text-6xl font-bold">Hire me</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
                     {/* bg-[#FFE800]/50 */}
