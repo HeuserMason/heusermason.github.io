@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3778ee67.css",
-    "main.js": "/portfolio/static/js/main.cc661bad.js",
+    "main.css": "/portfolio/static/css/main.7f05f2d1.css",
+    "main.js": "/portfolio/static/js/main.d6864036.js",
     "static/media/baby_2.png": "/portfolio/static/media/baby_2.264122eb1562f3800fb6.png",
     "static/media/baby_1.png": "/portfolio/static/media/baby_1.844514709acd281cd8b8.png",
     "static/media/baby_4.png": "/portfolio/static/media/baby_4.5c22f3d8de175bd540e3.png",
@@ -18,6 +18,7 @@
     "static/media/comments-solid.svg": "/portfolio/static/media/comments-solid.44567fe2f8598bf9a728547683cd8ebc.svg",
     "static/media/hashtag-solid.svg": "/portfolio/static/media/hashtag-solid.03cbc6a4e4b5cce8ab34e06eeb07b6ba.svg",
     "static/media/code-solid.svg": "/portfolio/static/media/code-solid.3c3282c5c6b706b280eaf6b868fea3ba.svg",
+    "static/media/arrow-up-right-from-square-solid.svg": "/portfolio/static/media/arrow-up-right-from-square-solid.0446195c65b4922c7184d25109b9a5c4.svg",
     "static/media/database-solid.svg": "/portfolio/static/media/database-solid.e63ee04b3509084e06668d39d7125e33.svg",
     "static/media/paintbrush-solid.svg": "/portfolio/static/media/paintbrush-solid.c874634f11aa77bcb9743e458055b3b9.svg",
     "static/media/briefcase-solid.svg": "/portfolio/static/media/briefcase-solid.014aac83e55c8e5fb3cdb8adf37660c7.svg",
@@ -26,14 +27,15 @@
     "static/media/xmark-solid.svg": "/portfolio/static/media/xmark-solid.599785d3d869c73c367c5cd081d2d986.svg",
     "static/media/pen-solid.svg": "/portfolio/static/media/pen-solid.3e867354f169d8553a3d58662a2c0ce1.svg",
     "static/media/envelope-solid.svg": "/portfolio/static/media/envelope-solid.5c4d5031358089786ad0f81c688d7504.svg",
+    "static/media/chevron-left-solid.svg": "/portfolio/static/media/chevron-left-solid.c65c229995b234e3d187ed67ee9b7343.svg",
     "static/media/plus-solid.svg": "/portfolio/static/media/plus-solid.24ed2c96db9a87f1b993e83ce84df4e5.svg",
     "static/media/user-solid.svg": "/portfolio/static/media/user-solid.2dad48cb7fe67e363245b5647b431a6e.svg",
     "static/media/mobile-screen-button-solid.svg": "/portfolio/static/media/mobile-screen-button-solid.ef4565a7854b70d9008605bb9e82e605.svg",
-    "main.3778ee67.css.map": "/portfolio/static/css/main.3778ee67.css.map",
-    "main.cc661bad.js.map": "/portfolio/static/js/main.cc661bad.js.map"
+    "main.7f05f2d1.css.map": "/portfolio/static/css/main.7f05f2d1.css.map",
+    "main.d6864036.js.map": "/portfolio/static/js/main.d6864036.js.map"
   },
   "entrypoints": [
-    "static/css/main.3778ee67.css",
-    "static/js/main.cc661bad.js"
+    "static/css/main.7f05f2d1.css",
+    "static/js/main.d6864036.js"
   ]
 }
