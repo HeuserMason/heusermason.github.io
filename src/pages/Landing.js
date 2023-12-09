@@ -82,8 +82,8 @@ const Landing = () => {
             desc={skill.shortDesc}
             colorLight={skill.colorLight}
             colorDark={skill.colorDark}
-            buttonFunc={() => openSkillModal(skill.key)}
         />
+        // buttonFunc={() => openSkillModal(skill.key)}
     );
 
     const mappedWork = WORK.map((work) =>
@@ -140,7 +140,7 @@ const Landing = () => {
                         <h1 className="inline text-6xl font-bold">Skills</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
-                    <p className="text-lg block px-2 italic font-bold text-gray-600">A couple of my main skills outlining what I'm capable of! Tap a card to learn more.</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of! Tap a card to learn more.</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12">
                     {mappedSkills}
@@ -157,6 +157,7 @@ const Landing = () => {
                 <div className='flex flex-wrap justify-center items-center gap-8'>
                     {mappedWork}
                 </div>
+                <p className="text-lg text-center block px-2 italic font-bold text-gray-500 pb-8 pt-20">More showcases coming soon!</p>
             </div>
             <div className="px-[10%] sm:px-[15%] lg:px-[20%] py-48" id="contact">
                 <div className="w-full pb-24">

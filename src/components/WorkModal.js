@@ -47,11 +47,11 @@ const WorkModal = ({keyConstant, onClose}) => {
     return (
         <Modal className='' onClose={onClose} size={"large"} header={
             <div className='relative'>
-                <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-r-none'>
+                <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none'>
                     <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none' />
                 </button>
-                <button onClick={() => CarouselRef.current.next()} className='absolute right-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none rotate-180'>
-                    <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none' />
+                <button onClick={() => CarouselRef.current.next()} className='absolute right-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-r-none'>
+                    <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none rotate-180' />
                 </button>
                 <CarouselStyle autoplay effect="fade" className='relative z-40' ref={CarouselRef}>
                     {mappedImages}
