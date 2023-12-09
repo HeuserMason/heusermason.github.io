@@ -126,6 +126,7 @@ const Landing = () => {
                             My commitment to <span className="text-highlight font-medium">client satisfaction</span> is at the core of my freelance practice. I believe in fostering strong, transparent, and collaborative relationships with my clients to ensure that their visions are not just met but exceeded.
                             <br /><br />
                             Let's collaborate and turn your ideas into reality!
+                            <br /><br />
                         </p>
                         <div className="pt-6">
                             <hr className="h-1 w-24 border-zinc-400 m-auto"/>
@@ -151,7 +152,7 @@ const Landing = () => {
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                         <h1 className="inline text-6xl font-bold">Work</h1>
                     </div>
-                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Here's a collection of some of my past work, have a look!</p>
+                    <p className="text-lg inline px-2 italic font-bold text-gray-600">Here's a collection of some of my past work. Have a look!</p>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8'>
                     {mappedWork}

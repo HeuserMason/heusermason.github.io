@@ -210,7 +210,7 @@ const WORK = [
     {
         "key": 1,
         "title": "Just Grooming",
-        "website": "https://justgrooming.com",
+        "website": "",
         "desc": "A nice grooming business for animals!",
         "coverImage": coverImage,
         "images": justGroomingImages,

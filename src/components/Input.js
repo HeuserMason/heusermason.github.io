@@ -11,7 +11,7 @@ const Input = ({ type, name, label, img, textarea, ...rest }) => {
     var inputEle = <input 
         type={type}
         name={name}
-        className="shadow-2xl bg-gray-50 border border-gray-300 text-gray-900 rounded-full rounded-l-none focus:ring-slate-500 placeholder:text-base focus:border-slate-500 block w-full p-2.5 px-3"
+        className="shadow-2xl bg-gray-50 border border-gray-300 text-gray-900 rounded-xl rounded-l-none focus:ring-slate-500 placeholder:text-base focus:border-slate-500 block w-full p-2.5 px-3"
         placeholder={label}
         {...rest}
     />

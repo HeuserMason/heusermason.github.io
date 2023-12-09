@@ -9,7 +9,7 @@
 body {
 
     background-color: #f6f4ef;
-    transition: height 999999s;
+    /* transition: height 999999s; */
     /* background-color: #efebe1; */
     font-family: 'Nunito Sans', sans-serif;
     background-image: url(./content/main-bg.jpg);
