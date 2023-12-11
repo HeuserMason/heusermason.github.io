@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.682bc43c.css",
-    "main.js": "/portfolio/static/js/main.a2871824.js",
+    "main.js": "/portfolio/static/js/main.5586ad2c.js",
     "static/media/baby_2.png": "/portfolio/static/media/baby_2.264122eb1562f3800fb6.png",
     "static/media/baby_1.png": "/portfolio/static/media/baby_1.844514709acd281cd8b8.png",
+    "static/media/lunaris_5.png": "/portfolio/static/media/lunaris_5.117ace3bf7392dfb1354.png",
     "static/media/baby_4.png": "/portfolio/static/media/baby_4.5c22f3d8de175bd540e3.png",
     "static/media/baby_3.png": "/portfolio/static/media/baby_3.c761d895560d7d5cf30c.png",
     "static/media/baby_5.png": "/portfolio/static/media/baby_5.52ac94c9169e7eeac09d.png",
-    "static/media/1.jpg": "/portfolio/static/media/1.063a3efcf51d502493f6.jpg",
+    "static/media/lunaris_1.png": "/portfolio/static/media/lunaris_1.bb0aa87b0bee4a7330b3.png",
+    "static/media/lunaris_4.png": "/portfolio/static/media/lunaris_4.ab1e77f63a362e6f5e11.png",
+    "static/media/lunaris_3.png": "/portfolio/static/media/lunaris_3.535b2c34ac95154b46c4.png",
+    "static/media/lunaris_2.png": "/portfolio/static/media/lunaris_2.2da8645badfa25a87056.png",
     "static/media/main-bg.jpg": "/portfolio/static/media/main-bg.ae8c12f4cfefc30e7f96.jpg",
-    "static/media/device-template.jpg": "/portfolio/static/media/device-template.91cb7612b42b3aad6ae5.jpg",
     "static/media/portfolio-picture.jpg": "/portfolio/static/media/portfolio-picture.e546ef7f74baf23cd8e1.jpg",
     "static/media/gears-solid.svg": "/portfolio/static/media/gears-solid.b35a7e50cc5d7e0bf32501f6bb283392.svg",
     "static/media/award-solid.svg": "/portfolio/static/media/award-solid.5994f767a6cf94d4d1dba02d2f93de7e.svg",
@@ -33,10 +36,10 @@
     "static/media/user-solid.svg": "/portfolio/static/media/user-solid.2dad48cb7fe67e363245b5647b431a6e.svg",
     "static/media/mobile-screen-button-solid.svg": "/portfolio/static/media/mobile-screen-button-solid.ef4565a7854b70d9008605bb9e82e605.svg",
     "main.682bc43c.css.map": "/portfolio/static/css/main.682bc43c.css.map",
-    "main.a2871824.js.map": "/portfolio/static/js/main.a2871824.js.map"
+    "main.5586ad2c.js.map": "/portfolio/static/js/main.5586ad2c.js.map"
   },
   "entrypoints": [
     "static/css/main.682bc43c.css",
-    "static/js/main.a2871824.js"
+    "static/js/main.5586ad2c.js"
   ]
 }
