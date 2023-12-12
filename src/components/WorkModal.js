@@ -45,7 +45,7 @@ const WorkModal = ({keyConstant, onClose}) => {
     const CarouselRef = useRef(null);
 
     return (
-        <Modal className='' onClose={onClose} size={"large"} header={
+        <Modal onClose={onClose} size={"large"} header={
             <div className='relative'>
                 <button onClick={() => CarouselRef.current.prev()} className='absolute left-0 top-1/2 -translate-y-1/2 h-full w-1/6 z-50 hover:bg-black/10 hover:rounded-xl hover:rounded-l-none'>
                     <img src={Chevron} width="12" height="12" alt="Chevron" className='absolute-center select-none' />

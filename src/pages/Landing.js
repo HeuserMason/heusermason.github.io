@@ -61,11 +61,24 @@ const Landing = () => {
         }
 
         if (errors.length <= 0) {
+            
+            try {
+                const res = await emailjs.send('default_service', 'template_ckv97fl', templateParams, 'wmCC6VZsKuhZ3Ir7y');
+                switch (res.status) {
 
-            const res = await emailjs.send('default_service', 'template_ckv97fl', templateParams, 'wmCC6VZsKuhZ3Ir7y');
-            if (res.text === "OK") {
-                toast.success("Email sent, thank you!");
-                event.target.reset();
+                    case 200 :
+                        toast.success("Email sent, thank you!");
+                        event.target.reset();
+                    break;
+                    
+                    default :
+                    case 400 :
+                        toast.error("An error has occured, try manually email using the address at the top!");
+                    break;
+                }
+
+            } catch (error) {
+                toast.error(error);
             }
 
         } else {
@@ -94,9 +107,16 @@ const Landing = () => {
         />
     );
 
+    const getYearsProgramming = () => {
+        //2017 likely year started seriously coding
+        var currDate = new Date().getFullYear();
+        return currDate - 2017;
+    }
+
     return (
 
-        <>
+        <>  
+            <div className='bg-image'></div>
             {skillModal}
             {workModal}
             <div className="w-full pt-[30rem] px-[5%] pb-24">
@@ -107,7 +127,7 @@ const Landing = () => {
                     <h2 className="text-highlight inline text-4xl px-2 font-medium">I'm a freelance full-stack software developer for hire. <br /> Read more below!</h2>
                 </div>
             </div>
-            <div className="main-padding py-28 cream-bg vertical-shadow" id="about">
+            <div className="main-padding py-28 pb-8 cream-bg vertical-shadow" id="about">
                 <div className="text-center">
                     <div className='flex justify-center'>
                         <div className='rounded-full portfolio-pic border-8 border-slate-200 border-double select-none shadow-xl'></div>
@@ -119,17 +139,22 @@ const Landing = () => {
                             <hr className="h-1 w-12 border-zinc-400 mt-3"/>
                         </div>
                         <p class='font-light text-2xl py-2'>
-                            Hey! I am a self-taught software developer with a passion for building ideas, whether they're small-scale applications or large-scale solutions built to scale.
+                            Hey! I am a self-taught software developer <span className="text-highlight font-medium">programming for {getYearsProgramming()}+ years</span>, with a passion for building ideas. Whether they're small-scale applications or large-scale solutions built to scale.
                             <br /><br />
                             I take immense pride in my ability to deliver <span className="text-highlight font-medium">high-quality</span>, innovative solutions that exceed expectations.
                             <br /><br />
                             My commitment to <span className="text-highlight font-medium">client satisfaction</span> is at the core of my freelance practice. I believe in fostering strong, transparent, and collaborative relationships with my clients to ensure that their visions are not just met but exceeded.
                             <br /><br />
-                            Let's collaborate and turn your ideas into reality!
+                            <span className='font-medium'>Let's collaborate and turn your ideas into reality!</span>
                             <br /><br />
                         </p>
-                        <div className="pt-6">
+                        <div className="">
                             <hr className="h-1 w-24 border-zinc-400 m-auto"/>
+                        </div>
+                        <div className='relative pt-28 select-none'>
+                            <div className='bg-slate-100 rounded-full absolute-center h-14 w-14 border-2 border-zinc-500 cream-bg'>
+                                <p className='text-center absolute-center text-xl leading-5 text-[1.1rem] signature-font'>M<br/>H</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +165,8 @@ const Landing = () => {
                         <h1 className="inline text-6xl font-bold">Skills</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
-                    <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of! Tap a card to learn more.</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of!</p>
+                    {/* Tap a card to learn more. */}
                 </div>
                 <div className="flex flex-wrap justify-center gap-12">
                     {mappedSkills}
@@ -157,7 +183,7 @@ const Landing = () => {
                 <div className='flex flex-wrap justify-center items-center gap-8'>
                     {mappedWork}
                 </div>
-                <p className="text-lg text-center block px-2 italic font-bold text-gray-500 pb-8 pt-20">More showcases coming soon!</p>
+                {/* <p className="text-lg text-center block px-2 italic font-bold text-gray-500 pb-8 pt-20">More showcases coming soon!</p> */}
             </div>
             <div className="px-[10%] sm:px-[15%] lg:px-[20%] py-48" id="contact">
                 <div className="w-full pb-24">

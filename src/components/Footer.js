@@ -27,8 +27,8 @@ const Footer = () => {
             <div className="flex justify-center gap-3">
                 <IconLink href="https://github.com/MasonHeuser" title="Github Profile" img={<img src={Github} width="48" height="48" className='svg-white-filter' alt='Github Icon'/>} />
                 {/* <IconLink href="https://discordapp.com/users/186953472640417793" title="Discord Profile" img={<img src={Discord} width="32" height="32" className='svg-white-filter' alt='Discord Icon'/>} /> */}
-                <IconLink href="https://www.upwork.com/freelancers/~0122f86a7861df0f7a" title="Upwork Profile" img={<img src={Upwork} width="32" height="32" className='svg-white-filter' alt='Upwork Icon'/>} />
-                <IconLink href="https://www.linkedin.com/in/mason-heuser-a3a018294" title="Linkedin Icon" img={<img src={LinkedIn} width="16" height="16" className='svg-white-filter' alt='Linkedin Icon'/>} />
+                {/* <IconLink href="https://www.upwork.com/freelancers/~0122f86a7861df0f7a" title="Upwork Profile" img={<img src={Upwork} width="32" height="32" className='svg-white-filter' alt='Upwork Icon'/>} /> */}
+                <IconLink href="https://www.linkedin.com/in/mason-heuser-a3a018294/" title="Linkedin Icon" img={<img src={LinkedIn} width="16" height="16" className='svg-white-filter' alt='Linkedin Icon'/>} />
                 <IconLink href="sms:9046027742" title="Text Me" img={<img src={Phone} width="16" height="16" className='svg-white-filter' alt='Phone Icon'/>} />
             </div>
         </div>

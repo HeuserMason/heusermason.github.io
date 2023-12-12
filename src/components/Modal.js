@@ -37,7 +37,7 @@ const Modal = ({onClose, header, children, size, className}) => {
 
     return (
         <div onClick={handleClick} className={"w-full h-full bg-black/30 z-50 fixed"}>
-            <div ref={elementRef} className={"absolute-center flex flex-col justify-center cream-bg rounded-xl mx-18 " + sizeStyle + " " + className}>
+            <div ref={elementRef} className={"absolute-center flex flex-col justify-center cream-bg rounded-xl mx-18 squeezeInAnimation " + sizeStyle + " " + className}>
                 {header}
                 {children}
             </div>

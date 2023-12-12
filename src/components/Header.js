@@ -16,7 +16,7 @@ const onEmailAddressClick = (e) => {
 
     //Copy to clipboard
     navigator.clipboard.writeText(e.target.innerText)
-    toast.info("Email copied!", {
+    toast.info("Copied email!", {
         autoClose: 1000,
         pauseOnHover: false,
         hideProgressBar: true,

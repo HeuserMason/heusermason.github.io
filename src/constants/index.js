@@ -5,9 +5,10 @@ import PaintBrush from "../content/icons/paintbrush-solid.svg";
 import Communication from "../content/icons/comments-solid.svg";
 import Phone from "../content/icons/mobile-screen-button-solid.svg";
 import BriefCase from "../content/icons/briefcase-solid.svg";
+import Gears from "../content/icons/gears-solid.svg";
 
-import babyBoostsCover from '../content/work/babyboosts/baby_1.png';
-import coverImage from '../content/work/1.jpg';
+// import babyBoostsCover from '../content/work/babyboosts/baby_1.png';
+// import coverImage from '../content/work/1.jpg';
 
 const SKILLS = [
     {   
@@ -188,6 +189,20 @@ const SKILLS = [
             My coding proficiency is tailored to meet the demands of business logistics. I specialize in developing applications and websites that streamline and optimize logistical operations. By leveraging efficient algorithms, intuitive user interfaces, and robust backend systems, I create solutions that enhance supply chain management, inventory tracking, and order fulfillment. This ensures businesses operate with maximum efficiency, ultimately leading to improved productivity, cost savings, and customer satisfaction. My expertise lies in crafting digital solutions that are finely tuned to meet the unique challenges of modern logistics, providing businesses with a competitive edge in today's fast-paced market.
         </>,
     },
+    {
+        "key": 7,
+        "title": "SEO",
+        "img": Gears,
+        "imgAlt": "Gears",
+        "imgSize": "48",
+        "colorLight": "bg-orange-200",
+        "colorDark": "bg-orange-400",
+        "shortDesc": <>For websites and businesses looking to stay competitive, <b><i>S</i>earch <i>E</i>ngine <i>O</i>ptimization</b> is a must. Through close study of your target market and a keen sense on the most oppurtune words, your business will be optimized so that anyone can find you without worry.</>,
+        "longDesc": 
+        <>
+            
+        </>,
+    },
 ];
 
 function importAll(r) {
@@ -195,7 +210,7 @@ function importAll(r) {
 }
 
 const babyBoostsImages = importAll(require.context('../content/work/babyboosts', false, /\.(png|jpe?g|svg)$/));
-const justGroomingImages = importAll(require.context('../content/work', false, /\.(png|jpe?g|svg)$/));
+const lunarisCoachingImages = importAll(require.context('../content/work/lunariscoaching', false, /\.(png|jpe?g|svg)$/));
 
 // {
 //     "key": 1,
@@ -221,8 +236,16 @@ const WORK = [
         "title": "Baby Boosts",
         "website": "https://babyboosts.com",
         "desc": <>One of my first personal projects, designed to help players achieve their goals in League of Legends. <br/> </>,
-        "coverImage": babyBoostsCover,
+        "coverImage": babyBoostsImages[0],
         "images": babyBoostsImages,
+    },
+    {
+        "key": 2,
+        "title": "Lunaris Coaching",
+        "website": "https://lunariscoaching.com",
+        "desc": "Designed for ease of use and a simplistic approach. Made for learning how to become a better player through coaching in League of Legends.",
+        "coverImage": lunarisCoachingImages[0],
+        "images": lunarisCoachingImages,
     },
 ];
 
