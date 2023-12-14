@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { toast } from 'react-toastify';
@@ -24,6 +24,67 @@ const Landing = () => {
     
     const [skillModal, setSkillModal] = useState(null);
     const [workModal, setWorkModal] = useState(null);
+
+    useEffect(() => {
+
+        window.addEventListener('scroll', onScroll);
+      
+        return () => window.removeEventListener('scroll', onScroll);     
+    });
+
+    var skillCardsStarted = false;
+    const aboutRef = useRef(null);
+    const skillsRef = useRef(null);
+    const onScroll = () => {
+        
+        if (aboutRef.current != null) { //Just for optimization
+
+            const offset = 800;
+            const aboutPos = aboutRef.current.getBoundingClientRect().top + offset
+            const scrollPos = window.scrollY + window.innerHeight;
+
+            if (aboutPos <= scrollPos && !aboutRef.current.classList.contains("fade-in")) {
+
+                //Animation classes
+                aboutRef.current.classList.add("fade-in");
+                aboutRef.current.classList.remove("opacity-0");
+                aboutRef.current = null;
+            }
+        }   
+        
+        if (!skillCardsStarted) { //Just for optimization
+
+            const offset = 1200;
+            const skillsPos = skillsRef.current.getBoundingClientRect().top + offset
+            const scrollPos = window.scrollY + window.innerHeight;
+
+            if (skillsPos <= scrollPos) {
+                
+                recursiveSkillCards();
+                skillCardsStarted = true;
+            }
+        }
+    }
+    
+    const skillCardFadeIn = (ele) => {
+
+        ele.classList.add("fade-in-skillcard");
+        ele.classList.remove("opacity-0");
+    }
+
+    var i = 0;
+    const recursiveSkillCards = () => {
+        
+        skillCardFadeIn(skillsRef.current.children[i]);
+        setTimeout(function() {
+
+            if (i < skillsRef.current.children.length - 1) {
+                i++;
+                //skillCardFadeIn(skillsRef.current.children[i]);
+                recursiveSkillCards();
+            }
+        }, 250)
+    }
 
     const openSkillModal = (key) => {
 
@@ -73,7 +134,7 @@ const Landing = () => {
                     
                     default :
                     case 400 :
-                        toast.error("An error has occured, try manually email using the address at the top!");
+                        toast.error("An error has occured, try manually emailing using the address at the top!");
                     break;
                 }
 
@@ -128,7 +189,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className="main-padding py-28 pb-8 cream-bg vertical-shadow" id="about">
-                <div className="text-center">
+                <div className="text-center opacity-0" ref={aboutRef}>
                     <div className='flex justify-center'>
                         <div className='rounded-full portfolio-pic border-8 border-slate-200 border-double select-none shadow-xl'></div>
                     </div>
@@ -138,7 +199,7 @@ const Landing = () => {
                             <h1 className="text-5xl whitespace-nowrap select-none font-bold">About Me</h1>
                             <hr className="h-1 w-12 border-zinc-400 mt-3"/>
                         </div>
-                        <p class='font-light text-2xl py-2'>
+                        <p className='font-light text-2xl py-2'>
                             Hey! I am a self-taught software developer <span className="text-highlight font-medium">programming for {getYearsProgramming()}+ years</span>, with a passion for building ideas. Whether they're small-scale applications or large-scale solutions built to scale.
                             <br /><br />
                             I take immense pride in my ability to deliver <span className="text-highlight font-medium">high-quality</span>, innovative solutions that exceed expectations.
@@ -159,7 +220,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-[10%] sm:px-[15%] lg:px-[20%] py-48" id="skills">
+            <div className="px-[10%] sm:px-[15%] lg:px-[10%] xxl:px-[20%] py-48" id="skills">
                 <div className="w-full pb-24 px-[2%] md:px-[5%]">
                     <div className="py-4 pb-2 whitespace-nowrap flex items-center space-x-6">
                         <h1 className="inline text-6xl font-bold">Skills</h1>
@@ -168,7 +229,7 @@ const Landing = () => {
                     <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of!</p>
                     {/* Tap a card to learn more. */}
                 </div>
-                <div className="flex flex-wrap justify-center gap-12">
+                <div className="flex flex-wrap justify-center gap-12" ref={skillsRef}>
                     {mappedSkills}
                 </div>
             </div>

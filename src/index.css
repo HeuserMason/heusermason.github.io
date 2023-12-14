@@ -8,7 +8,7 @@
 
 body {
 
-    /* background-color: #f6f4ef; */
+    background-color: #f6f4ef;
     /* transition: height 999999s; */
     /* background-color: #efebe1; */
     font-family: 'Nunito Sans', sans-serif;
@@ -122,8 +122,34 @@ h1, h2 {
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes move-from-top {
+    0% {
+        transform:translateY(-7.5%);
+    }
+    100% {
+        transform:translateY(0%);
+    }
+}
+
 .squeezeInAnimation {
     animation: squeezeIn 0.2s normal
+}
+
+.fade-in {
+    animation: fade-in 2.5s normal, move-from-top 1.5s normal;
+}
+
+.fade-in-skillcard {
+    animation: fade-in 1.5s normal, move-from-top 1.5s normal;
 }
 
 .text-highlight {

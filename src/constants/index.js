@@ -111,13 +111,13 @@ const SKILLS = [
     },
     {
         "key": 4,
-        "title": "Design",
+        "title": "Design & Animation",
         "img": PaintBrush,
         "imgAlt": "Paint Brush",
         "imgSize": "36",
         "colorLight": "bg-amber-200",
         "colorDark": "bg-amber-400",
-        "shortDesc": <>With a keen eye for <b>design</b> and a <b>creative touch</b>, I'll infuse your project with vibrant colors and visually <b>captivating</b> elements, ensuring we present your idea in the most compelling way possible!</>,
+        "shortDesc": <>With a careful eye for <b>design</b> and a <b>creative touch</b>, I'll infuse your project with vibrant colors and visually <b>captivating</b> elements, ensuring we present your idea in the most compelling way possible!</>, //Along with animations added to incite energy and enthusiasim in any project!
         "longDesc": 
         <>
             I take pride in my proficiency in design, particularly in crafting websites that prioritize efficiency and user experience. This proficiency extends to my mastery of Figma, a powerful design tool that facilitates seamless collaboration and precise prototyping.
@@ -204,20 +204,20 @@ const SKILLS = [
             My coding proficiency is tailored to meet the demands of business logistics. I specialize in developing applications and websites that streamline and optimize logistical operations. By leveraging efficient algorithms, intuitive user interfaces, and robust backend systems, I create solutions that enhance supply chain management, inventory tracking, and order fulfillment. This ensures businesses operate with maximum efficiency, ultimately leading to improved productivity, cost savings, and customer satisfaction. My expertise lies in crafting digital solutions that are finely tuned to meet the unique challenges of modern logistics, providing businesses with a competitive edge in today's fast-paced market.
         </>,
     },
-    // {
-    //     "key": 8,
-    //     "title": "Game Development",
-    //     "img": Gamepad,
-    //     "imgAlt": "Gamepad",
-    //     "imgSize": "48",
-    //     "colorLight": "bg-orange-200",
-    //     "colorDark": "bg-orange-400",
-    //     "shortDesc": <>A natural passion for video games & simulations pointed me in a direction to practice the </>,
-    //     "longDesc": 
-    //     <>
+    {
+        "key": 8,
+        "title": "Game Development",
+        "img": Gamepad,
+        "imgAlt": "Gamepad",
+        "imgSize": "48",
+        "colorLight": "bg-orange-200",
+        "colorDark": "bg-orange-400",
+        "shortDesc": <>A natural passion for video games pushed me in a direction to practice making them, and through time, gain the confidence to craft anything from <b>minor 2D features</b> to <b>sprawling 3D worlds!</b> Additionally, a deep understanding of <b>networking</b> allows the creation of <b>seamless multiplayer experiences</b> too!</>,
+        "longDesc": 
+        <>
             
-    //     </>,
-    // },
+        </>,
+    },
 ];
 
 function importAll(r) {

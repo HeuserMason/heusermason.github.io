@@ -3,7 +3,7 @@ import Sig from '../content/signature_cropped.png';
 // import Discord from '../content/icons/discord.svg';
 import Github from '../content/icons/github.svg';
 import LinkedIn from '../content/icons/linkedin-in.svg';
-import Upwork from '../content/icons/upwork.png';
+//import Upwork from '../content/icons/upwork.png';
 import Phone from '../content/icons/phone-flip-solid.svg'
 
 import Link from './Link';

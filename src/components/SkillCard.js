@@ -1,10 +1,10 @@
 import Award from "../content/icons/award-solid.svg"
 
-const SkillCard = ({ img, title, desc, colorLight, colorDark, buttonFunc }) => {
+const SkillCard = ({ img, title, desc, colorLight, colorDark, buttonFunc, className }) => {
 
     return (
 
-        <div onClick={buttonFunc} className="flex justify-center flex-col relative w-[19rem] border-2 rounded-lg cursor-pointer grow-skill shadow-xl hover:shadow-2xl active:shadow-2xl">
+        <div onClick={buttonFunc} className={"flex justify-center flex-col relative w-[19rem] border-2 rounded-lg cursor-pointer grow-skill shadow-xl hover:shadow-2xl active:shadow-2xl opacity-0 " + className}>
             <img className="absolute top-0 left-0 -translate-y-1/4 -translate-x-1/4 select-none" src={Award} width="32" height="32" alt="Award" />
             <div className={"min-h-[6rem] rounded-lg rounded-b-none " + colorLight}></div>
             <div className="min-h-[24.5rem] rounded-lg rounded-t-none skill-bg-gradient relative">
