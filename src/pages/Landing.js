@@ -39,7 +39,7 @@ const Landing = () => {
         
         if (aboutRef.current != null) { //Just for optimization
 
-            const offset = 800;
+            const offset = 400;
             const aboutPos = aboutRef.current.getBoundingClientRect().top + offset
             const scrollPos = window.scrollY + window.innerHeight;
 
