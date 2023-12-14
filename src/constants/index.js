@@ -6,6 +6,7 @@ import Communication from "../content/icons/comments-solid.svg";
 import Phone from "../content/icons/mobile-screen-button-solid.svg";
 import BriefCase from "../content/icons/briefcase-solid.svg";
 import Gears from "../content/icons/gears-solid.svg";
+import Gamepad from "../content/icons/gamepad-solid.svg";
 
 // import babyBoostsCover from '../content/work/babyboosts/baby_1.png';
 // import coverImage from '../content/work/1.jpg';
@@ -96,6 +97,20 @@ const SKILLS = [
     },
     {
         "key": 3,
+        "title": "Search Optimization",
+        "img": Gears,
+        "imgAlt": "Gears",
+        "imgSize": "48",
+        "colorLight": "bg-cyan-200",
+        "colorDark": "bg-cyan-400",
+        "shortDesc": <>For websites and businesses looking to stay competitive, <b><i>S</i>earch <i>E</i>ngine <i>O</i>ptimization</b> is a must. Through close study of your target market, your business will be optimized so that <b>anyone can find you without worry.</b></>,
+        "longDesc": 
+        <>
+            
+        </>,
+    },
+    {
+        "key": 4,
         "title": "Design",
         "img": PaintBrush,
         "imgAlt": "Paint Brush",
@@ -124,7 +139,7 @@ const SKILLS = [
         </>,
     },
     {
-        "key": 4,
+        "key": 5,
         "title": "Communication",
         "img": Communication,
         "imgAlt": "User Group",
@@ -162,7 +177,7 @@ const SKILLS = [
         </>,
     },
     {
-        "key": 5,
+        "key": 6,
         "title": "Mobile Ready",
         "img": Phone,
         "imgAlt": "Phone",
@@ -176,7 +191,7 @@ const SKILLS = [
         </>,
     },
     {
-        "key": 6,
+        "key": 7,
         "title": "Business Optimized",
         "img": BriefCase,
         "imgAlt": "Briefcase",
@@ -189,20 +204,20 @@ const SKILLS = [
             My coding proficiency is tailored to meet the demands of business logistics. I specialize in developing applications and websites that streamline and optimize logistical operations. By leveraging efficient algorithms, intuitive user interfaces, and robust backend systems, I create solutions that enhance supply chain management, inventory tracking, and order fulfillment. This ensures businesses operate with maximum efficiency, ultimately leading to improved productivity, cost savings, and customer satisfaction. My expertise lies in crafting digital solutions that are finely tuned to meet the unique challenges of modern logistics, providing businesses with a competitive edge in today's fast-paced market.
         </>,
     },
-    {
-        "key": 7,
-        "title": "SEO",
-        "img": Gears,
-        "imgAlt": "Gears",
-        "imgSize": "48",
-        "colorLight": "bg-orange-200",
-        "colorDark": "bg-orange-400",
-        "shortDesc": <>For websites and businesses looking to stay competitive, <b><i>S</i>earch <i>E</i>ngine <i>O</i>ptimization</b> is a must. Through close study of your target market and a keen sense on the most oppurtune words, your business will be optimized so that anyone can find you without worry.</>,
-        "longDesc": 
-        <>
+    // {
+    //     "key": 8,
+    //     "title": "Game Development",
+    //     "img": Gamepad,
+    //     "imgAlt": "Gamepad",
+    //     "imgSize": "48",
+    //     "colorLight": "bg-orange-200",
+    //     "colorDark": "bg-orange-400",
+    //     "shortDesc": <>A natural passion for video games & simulations pointed me in a direction to practice the </>,
+    //     "longDesc": 
+    //     <>
             
-        </>,
-    },
+    //     </>,
+    // },
 ];
 
 function importAll(r) {
@@ -217,14 +232,6 @@ const lunarisCoachingImages = importAll(require.context('../content/work/lunaris
 //     "title": "Just Grooming",
 //     "website": "",
 //     "desc": "A nice grooming business for animals!",
-//     "coverImage": coverImage,
-//     "images": justGroomingImages,
-// },
-// {
-//     "key": 2,
-//     "title": "Lunaris Coaching",
-//     "website": "https://lunariscoaching.com",
-//     "desc": "Designed for ease of use and simplisticity. Made for learning how to be a better player in League of Legends through coaching.",
 //     "coverImage": coverImage,
 //     "images": justGroomingImages,
 // },
