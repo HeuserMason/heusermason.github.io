@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://masonheuser.github.io/",
+  "homepage": "https://masonheuser.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
