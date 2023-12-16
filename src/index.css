@@ -41,17 +41,11 @@ body {
 }
 /* ===== Scrollbar CSS End ===== */
 
-li {
-    font-size: 14px;
-    margin-left: 10px;
-    list-style-type: circle;
- }
-
- li:before { 
+.bullet-points:before { 
     content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
     font-size: 2rem;
 }
-li {
+.bullet-points {
     list-style: none;
     text-indent: -1em; /* helps make it look more like it's a bullet. */
 }

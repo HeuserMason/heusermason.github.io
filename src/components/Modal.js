@@ -27,7 +27,7 @@ const Modal = ({onClose, header, children, size, className}) => {
         
         default :
         case "small" :
-            sizeStyle = "max-w-xs sm:max-w-lg md:max-w-2xl max-h-full w-full";
+            sizeStyle = "max-w-sm sm:max-w-lg md:max-w-2xl max-h-full w-full";
         break;
 
         case "large" :

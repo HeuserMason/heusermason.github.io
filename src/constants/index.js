@@ -26,14 +26,14 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Language Proficiencies</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">HTML</li>
-                <li className="text-lg font-bold">CSS</li>
-                <li className="text-lg font-bold">JavaScript</li>
-                <li className="text-lg font-bold">PHP</li>
-                <li className="text-lg font-bold">SQL</li>
-                <li className="text-lg font-bold">C#</li>
-                <li className="text-lg font-bold">C++</li>
-                <li className="text-lg font-bold">Python</li>
+                <li className="text-lg font-bold bullet-points">HTML</li>
+                <li className="text-lg font-bold bullet-points">CSS</li>
+                <li className="text-lg font-bold bullet-points">JavaScript</li>
+                <li className="text-lg font-bold bullet-points">PHP</li>
+                <li className="text-lg font-bold bullet-points">SQL</li>
+                <li className="text-lg font-bold bullet-points">C#</li>
+                <li className="text-lg font-bold bullet-points">C++</li>
+                <li className="text-lg font-bold bullet-points">Python</li>
             </ul>
         </>,
     },
@@ -51,9 +51,9 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Data Structure Proficiencies</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">SQL</li>
-                <li className="text-lg font-bold">MongoDB</li>
-                <li className="text-lg font-bold">Mongoose</li>
+                <li className="text-lg font-bold bullet-points">SQL</li>
+                <li className="text-lg font-bold bullet-points">MongoDB</li>
+                <li className="text-lg font-bold bullet-points">Mongoose</li>
             </ul>
         </>,
     },
@@ -71,8 +71,8 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Proficient Developmental Stacks</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">MERN Stack</li>
-                <li className="text-lg font-bold">LAMP Stack</li>
+                <li className="text-lg font-bold bullet-points">MERN Stack</li>
+                <li className="text-lg font-bold bullet-points">LAMP Stack</li>
             </ul>
         </>,
     },
@@ -104,10 +104,10 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Design Oriented Features</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">Figma Prototyping</li>
-                <li className="text-lg font-bold">Website Design</li>
-                <li className="text-lg font-bold">Accessibility and Responsiveness</li>
-                <li className="text-lg font-bold">Typography and Color Theory</li>
+                <li className="text-lg font-bold bullet-points">Figma Prototyping</li>
+                <li className="text-lg font-bold bullet-points">Website Design</li>
+                <li className="text-lg font-bold bullet-points">Accessibility and Responsiveness</li>
+                <li className="text-lg font-bold bullet-points">Typography and Color Theory</li>
             </ul>
         </>,
     },
@@ -125,12 +125,12 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Communication Expectations</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">Proactive Updates</li>
-                <li className="text-lg font-bold">Accessible Communication Channels</li>
-                <li className="text-lg font-bold">Timely Responses</li>
-                <li className="text-lg font-bold">Transparency on Challenges</li>
-                <li className="text-lg font-bold">Client Feedback Loop</li>
-                <li className="text-lg font-bold">Client Insight</li>
+                <li className="text-lg font-bold bullet-points">Proactive Updates</li>
+                <li className="text-lg font-bold bullet-points">Accessible Communication Channels</li>
+                <li className="text-lg font-bold bullet-points">Timely Responses</li>
+                <li className="text-lg font-bold bullet-points">Transparency on Challenges</li>
+                <li className="text-lg font-bold bullet-points">Client Feedback Loop</li>
+                <li className="text-lg font-bold bullet-points">Client Insight</li>
             </ul>
         </>,
     },
@@ -176,9 +176,9 @@ const SKILLS = [
             <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Development Engine Proficiencies</h3>
             <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
             <ul>
-                <li className="text-lg font-bold">Unity Engine</li>
-                <li className="text-lg font-bold">Unreal Engine 4 & 5</li>
-                <li className="text-lg font-bold">Godot</li>
+                <li className="text-lg font-bold bullet-points">Unity Engine</li>
+                <li className="text-lg font-bold bullet-points">Unreal Engine 4 & 5</li>
+                <li className="text-lg font-bold bullet-points">Godot</li>
             </ul>
         </>,
     },

@@ -26,10 +26,10 @@ const SkillModal = ({keyConstant, onClose}) => {
             <div className='flex flex-col justify-center text-center px-[10%]'>
                 <h2 className="text-4xl sm:text-6xl font-bold py-14 pb-4">{skillObject.title}</h2>
                 <hr className="h-1 w-[25%] border-zinc-400 mx-auto mt-4"/>
-                <div className='overflow-y-auto max-h-[21rem] sm:max-h-[40rem] my-6'>
+                <div className='overflow-y-auto max-h-[18rem] sm:max-h-[26rem] md:max-h-[40rem] my-6'>
                     <h3 className='font-bold text-zinc-600 text-xl tracking-wide'>Description</h3>
                     <hr className="h-1 w-[10%] border-zinc-400 mx-auto my-4"/>
-                    <div className='text-lg sm:max-h-[35rem] py-2 px-0 sm:px-3 md:px-6'>
+                    <div className='text-lg sm:max-h-[35rem] py-2 px-2 sm:px-3 md:px-6'>
                         {skillObject.shortDesc}
                     </div>
                     <hr className="h-1 w-[20%] border-zinc-400 mx-auto my-6"/>

@@ -141,6 +141,7 @@ const Landing = () => {
     const mappedWork = WORK.map((work) =>
         <WorkCard
             key={work.key}
+            keyConstant={work.key}
             title={work.title}
             coverImage={work.coverImage}
             buttonFunc={() => openWorkModal(work.key)}
