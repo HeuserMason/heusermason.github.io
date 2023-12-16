@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import SkillModal from '../components/SkillModal';
 import WorkModal from '../components/WorkModal';
 
+import SkillBubble from "../components/SkillBubble";
 import SkillCard from "../components/SkillCard";
 import WorkCard from '../components/WorkCard';
 import Input from "../components/Input";
@@ -25,21 +26,31 @@ const Landing = () => {
     const [skillModal, setSkillModal] = useState(null);
     const [workModal, setWorkModal] = useState(null);
 
+    const [mappedSkills, setMappedSkills] = useState(null);
+
     useEffect(() => {
 
+        //onScroll();
+        onResize();
+
         window.addEventListener('scroll', onScroll);
-      
-        return () => window.removeEventListener('scroll', onScroll);     
-    });
+        window.addEventListener('resize', onResize);
+
+        return () => { 
+            window.removeEventListener("scroll", onScroll); 
+            window.removeEventListener("resize", onResize);
+        }
+    }, []);
 
     var skillCardsStarted = false;
     const aboutRef = useRef(null);
     const skillsRef = useRef(null);
+
     const onScroll = () => {
         
         if (aboutRef.current != null) { //Just for optimization
 
-            const offset = 400;
+            const offset = 300;
             const aboutPos = aboutRef.current.getBoundingClientRect().top + offset
             const scrollPos = window.scrollY + window.innerHeight;
 
@@ -65,26 +76,76 @@ const Landing = () => {
             }
         }
     }
-    
-    const skillCardFadeIn = (ele) => {
 
-        ele.classList.add("fade-in-skillcard");
-        ele.classList.remove("opacity-0");
-    }
-
+    var activeTimer = null;
     var i = 0;
     const recursiveSkillCards = () => {
         
-        skillCardFadeIn(skillsRef.current.children[i]);
-        setTimeout(function() {
+        var ele = skillsRef.current.children[i];
+        skillCardFadeIn(ele);
+        activeTimer = setTimeout(function() {
 
-            if (i < skillsRef.current.children.length - 1) {
+            if (i < skillsRef.current.children.length - 1 && ele != null) {
                 i++;
-                //skillCardFadeIn(skillsRef.current.children[i]);
                 recursiveSkillCards();
             }
         }, 250)
     }
+        
+    const skillCardFadeIn = (ele) => {
+
+        if (ele != null) {
+            ele.classList.add("fade-in-skillcard");
+            ele.classList.remove("opacity-0");
+        }
+    }
+
+    const onResize = () => {
+
+        if (window.innerWidth <= 768) {
+
+            setMappedSkills(SKILLS.map((skill) =>
+                <SkillBubble
+                    key={skill.key}
+                    title={skill.title} 
+                    img={<img src={skill.img} width={skill.imgSize} height={skill.imgSize} alt={skill.imgAlt} />}
+                    colorLight={skill.colorLight}
+                    colorDark={skill.colorDark}
+                    buttonFunc={() => openSkillModal(skill.key)}
+                />
+            ));
+        } else {
+
+            setMappedSkills(SKILLS.map((skill) =>
+                <SkillCard
+                    key={skill.key}
+                    title={skill.title} 
+                    img={<img src={skill.img} width={skill.imgSize} height={skill.imgSize} alt={skill.imgAlt} />} 
+                    desc={skill.shortDesc}
+                    colorLight={skill.colorLight}
+                    colorDark={skill.colorDark}
+                    buttonFunc={() => openSkillModal(skill.key)}
+                />
+            ));
+        }
+
+        //Reset cards showing progressively through timeout timer
+        //as different elements are coming in now
+        if (activeTimer != null) {
+            clearTimeout(activeTimer);
+        }
+        i = 0;
+        skillCardsStarted = false;
+    }
+    
+    const mappedWork = WORK.map((work) =>
+        <WorkCard
+            key={work.key}
+            title={work.title}
+            coverImage={work.coverImage}
+            buttonFunc={() => openWorkModal(work.key)}
+        />
+    );
 
     const openSkillModal = (key) => {
 
@@ -149,25 +210,6 @@ const Landing = () => {
         SetSubmitButtonDisabled(false);
     };
 
-    const mappedSkills = SKILLS.map((skill) =>
-        <SkillCard 
-            title={skill.title} 
-            img={<img src={skill.img} width={skill.imgSize} height={skill.imgSize} alt={skill.imgAlt} />} 
-            desc={skill.shortDesc}
-            colorLight={skill.colorLight}
-            colorDark={skill.colorDark}
-        />
-        // buttonFunc={() => openSkillModal(skill.key)}
-    );
-
-    const mappedWork = WORK.map((work) =>
-        <WorkCard
-            title={work.title}
-            coverImage={work.coverImage}
-            buttonFunc={() => openWorkModal(work.key)}
-        />
-    );
-
     const getYearsProgramming = () => {
         //2017 likely year started seriously coding
         var currDate = new Date().getFullYear();
@@ -226,10 +268,10 @@ const Landing = () => {
                         <h1 className="inline text-6xl font-bold">Skills</h1>
                         <hr className="h-1 w-24 border-zinc-400 mt-4"/>
                     </div>
-                    <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of!</p>
+                    <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of! Tap a skill to learn more.</p>
                     {/* Tap a card to learn more. */}
                 </div>
-                <div className="flex flex-wrap justify-center gap-12" ref={skillsRef}>
+                <div className="flex flex-wrap justify-center gap-x-32 gap-y-12 lg:gap-12" ref={skillsRef}>
                     {mappedSkills}
                 </div>
             </div>
