@@ -272,7 +272,7 @@ const Landing = () => {
                     <p className="text-lg block px-2 italic font-bold text-gray-600">My main skills outlining what I'm capable of! Tap a skill to learn more.</p>
                     {/* Tap a card to learn more. */}
                 </div>
-                <div className="flex flex-wrap justify-center gap-x-32 gap-y-12 lg:gap-12" ref={skillsRef}>
+                <div className="px-[7.5%] md:px-0 flex flex-wrap justify-center gap-x-32 gap-y-12 lg:gap-12" ref={skillsRef}>
                     {mappedSkills}
                 </div>
             </div>
