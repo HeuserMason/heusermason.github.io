@@ -6,6 +6,9 @@ import { toast } from 'react-toastify';
 import SkillModal from '../components/SkillModal';
 import WorkModal from '../components/WorkModal';
 
+import { Drawer } from 'antd';
+import styled from "styled-components";
+
 import SkillBubble from "../components/SkillBubble";
 import SkillCard from "../components/SkillCard";
 import WorkCard from '../components/WorkCard';
@@ -23,7 +26,9 @@ const Landing = () => {
 
     const [submitButtonDisabled, SetSubmitButtonDisabled] = useState(false);
     
-    const [skillModal, setSkillModal] = useState(null);
+    const [skillDrawerContent, setSkillDrawerContent] = useState({});
+    const [StyledDrawer, setStyledDrawer] = useState(styled(Drawer)``);
+    //const [isSkillDrawerOpen, setIsSkillDrawerOpen] = useState(false);
     const [workModal, setWorkModal] = useState(null);
 
     const [mappedSkills, setMappedSkills] = useState(null);
@@ -150,9 +155,26 @@ const Landing = () => {
 
     const openSkillModal = (key) => {
 
-        setSkillModal(
-            <SkillModal keyConstant={key} onClose={() => { setSkillModal(null); }} />
-        );
+        const skillObject = SKILLS.find(x => x.key === key);
+        setStyledDrawer(
+            styled(Drawer)`
+                .ant-drawer-header {
+
+                    background-color: ${skillObject.colorLightRGB};
+                }
+            `
+        )
+        setSkillDrawerContent({
+            "title": 
+                <div className='flex space-x-4 px-6 text-center items-center justify-center py-8'>
+                    <img src={skillObject.img} width={skillObject.imgSize} height={skillObject.imgSize} alt={skillObject.imgAlt} />
+                    <span className='text-2xl font-bold'>{skillObject.title}</span>
+                </div>,
+            "shortDesc": skillObject.shortDesc,
+            "longDesc": skillObject.longDesc
+        })
+
+        // <SkillModal keyConstant={key} onClose={() => { setSkillModal(null); }} />
     };
 
     const openWorkModal = (key) => {
@@ -221,7 +243,14 @@ const Landing = () => {
 
         <>  
             <div className='bg-image'></div>
-            {skillModal}
+            {/* {skillModal} */}
+            <StyledDrawer title={skillDrawerContent.title} onClose={() => { setSkillDrawerContent({}); }} height={568} open={ Object.keys(skillDrawerContent).length !== 0 } placement='bottom'>
+                <div className='px-[5%] md:px-[10%] xl:px-[20%] xxl:px-[35%] space-y-8'>
+                    <p className='text-center text-xl'>{skillDrawerContent.shortDesc}</p>
+                    <hr className="h-1 w-[40%] border-zinc-400 mx-auto my-4"/>
+                    <p className='text-center'>{skillDrawerContent.longDesc}</p>
+                </div>
+            </StyledDrawer>
             {workModal}
             <div className="w-full pt-[30rem] px-[5%] pb-24">
                 <div className="py-4">

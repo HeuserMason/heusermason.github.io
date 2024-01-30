@@ -19,6 +19,7 @@ const SKILLS = [
         "imgAlt": "Code Slash",
         "imgSize": "32",
         "colorLight": "bg-red-300",
+        "colorLightRGB": "rgb(252 165 165)",
         "colorDark": "bg-red-400",
         "shortDesc": <>A skill that forms the backbone of any idea, from inception to fruition. With <b>proficiency in many different programming languages</b> and the ability to understand, work with, and <b>build complex design structures</b>, I'm confident to be able to meet your needs as a developer.</>,
         "longDesc": 
@@ -44,6 +45,7 @@ const SKILLS = [
         "imgAlt": "Database",
         "imgSize": "28",
         "colorLight": "bg-purple-200",
+        "colorLightRGB": "rgb(233 213 255)",
         "colorDark": "bg-purple-400",
         "shortDesc": <>Adeptness in data flow and architecture enables both straightforward and advanced data <b>handling, optimization, and maintenance</b>. Guaranteeing a <b>seamless, secure, and precise</b> flow within any project structure!</>,
         "longDesc": 
@@ -64,6 +66,7 @@ const SKILLS = [
         "imgAlt": "Stacked Cubes",
         "imgSize": "36",
         "colorLight": "bg-lime-200",
+        "colorLightRGB": "rgb(217 249 157)",
         "colorDark": "bg-lime-400",
         "shortDesc": <>Proficiency in both front-end and back-end architecture allows seamless design over a website or application flow, <b>eliminating the leg work of seeking additional resources</b>. Staying current with popular frameworks and libraries ensures every project is equipped with the <b>latest and greatest features and advancements</b>!</>,
         "longDesc": 
@@ -78,11 +81,12 @@ const SKILLS = [
     },
     {
         "key": 3,
-        "title": "Search Optimization",
+        "title": "SEO Optimization",
         "img": Gears,
         "imgAlt": "Gears",
         "imgSize": "48",
         "colorLight": "bg-cyan-200",
+        "colorLightRGB": "rgb(165 243 252)",
         "colorDark": "bg-cyan-400",
         "shortDesc": <>For websites and businesses looking to stay competitive, <b><i>S</i>earch <i>E</i>ngine <i>O</i>ptimization</b> is a must. Through close study of your target market, your business will be optimized so that <b>anyone can find you without worry.</b></>,
         "longDesc": 
@@ -97,6 +101,7 @@ const SKILLS = [
         "imgAlt": "Paint Brush",
         "imgSize": "36",
         "colorLight": "bg-amber-200",
+        "colorLightRGB": "rgb(253 230 138)",
         "colorDark": "bg-amber-400",
         "shortDesc": <>With a careful eye for <b>design</b> and a <b>creative touch</b>, I'll infuse your project with vibrant colors and visually <b>captivating</b> elements, ensuring we present your idea in the most compelling way possible!</>, //Along with animations added to incite energy and enthusiasim in any project!
         "longDesc": 
@@ -118,6 +123,7 @@ const SKILLS = [
         "imgAlt": "User Group",
         "imgSize": "48",
         "colorLight": "bg-blue-200",
+        "colorLightRGB": "rgb(191 219 254)",
         "colorDark": "bg-blue-400",
         "shortDesc": <>Emphasizing <b>clear communication</b> stands as a foundational principle in every project I undertake. Keeping an open channel of <b>contact with clients at all times</b> ensures you're never left in the dark.</>,
         "longDesc": 
@@ -141,6 +147,7 @@ const SKILLS = [
         "imgAlt": "Phone",
         "imgSize": "24",
         "colorLight": "bg-pink-200",
+        "colorLightRGB": "rgb(251 207 232)",
         "colorDark": "bg-pink-400",
         "shortDesc": <>Whether we're crafting a straightforward app or developing a robust website for widespread use in our <b>mobile-centric</b> world, I prioritize ensuring that every application or website functions <b>seamlessly on all devices</b>, regardless of their specifications.</>,
         "longDesc": 
@@ -155,6 +162,7 @@ const SKILLS = [
         "imgAlt": "Briefcase",
         "imgSize": "32",
         "colorLight": "bg-teal-200",
+        "colorLightRGB": "rgb(153 246 228)",
         "colorDark": "bg-teal-400",
         "shortDesc": <>By experiencing business and it's logistics first-hand, I am capable of furnishing you and your project with the <b>essential building blocks</b> required for smooth and precise operation, ensuring you're <b>equipped with the necessary tools</b> to tackle any challenge that may come your way.</>,
         "longDesc": 
@@ -169,6 +177,7 @@ const SKILLS = [
         "imgAlt": "Gamepad",
         "imgSize": "48",
         "colorLight": "bg-orange-200",
+        "colorLightRGB": "rgb(254 215 170)",
         "colorDark": "bg-orange-400",
         "shortDesc": <>A natural passion for video games pushed me in a direction to practice making them, and through time, gain the confidence to craft anything from <b>minor 2D features</b> to <b>sprawling 3D worlds!</b> Additionally, a deep understanding of <b>networking</b> allows the creation of <b>seamless multiplayer experiences</b> too!</>,
         "longDesc": 
