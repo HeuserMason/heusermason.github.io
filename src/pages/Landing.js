@@ -35,7 +35,7 @@ const Landing = () => {
 
     useEffect(() => {
 
-        //onScroll();
+        onScroll();
         onResize();
 
         window.addEventListener('scroll', onScroll);
@@ -236,6 +236,7 @@ const Landing = () => {
     const getYearsProgramming = () => {
         //2017 likely year started seriously coding
         var currDate = new Date().getFullYear();
+        //alert(window.innerHeight);
         return currDate - 2017;
     }
 
@@ -243,8 +244,8 @@ const Landing = () => {
 
         <>  
             <div className='bg-image'></div>
-            {/* {skillModal} */}
-            <StyledDrawer title={skillDrawerContent.title} onClose={() => { setSkillDrawerContent({}); }} height={568} open={ Object.keys(skillDrawerContent).length !== 0 } placement='bottom'>
+            {/* {skillModal} old Drawer height: 568 */}
+            <StyledDrawer title={skillDrawerContent.title} onClose={() => { setSkillDrawerContent({}); }} height={(window.innerHeight)} open={ Object.keys(skillDrawerContent).length !== 0 } placement='bottom'>
                 <div className='px-[5%] md:px-[10%] xl:px-[20%] xxl:px-[35%] space-y-8'>
                     <p className='text-center text-xl'>{skillDrawerContent.shortDesc}</p>
                     <hr className="h-1 w-[40%] border-zinc-400 mx-auto my-4"/>
